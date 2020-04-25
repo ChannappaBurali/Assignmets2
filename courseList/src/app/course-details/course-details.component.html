@@ -1,0 +1,9 @@
+<div class="fluid-container">
+    <select class="form-control" (change)="onChange($event)">
+        <option disabled>Select Courses</option>
+        <option *ngFor="let crs of courses">{{crs.courseName}}</option>
+      </select>
+<div class="container">
+<h2>You have selected courseId={{id}}</h2>
+</div>
+</div>
